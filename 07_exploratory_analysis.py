@@ -1,9 +1,15 @@
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
+import seaborn as sns
 
-df = pd.read_csv('twitter_dataset.csv')
-print(df.describe(include='all'))
+df = pd.read_csv("/content/twitter_dataset.csv")
 
-sns.pairplot(df[['Retweet_count', 'Like_count']])
-plt.show()
+print(df.head())
+
+print(df.dtypes)
+
+print(df.isnull().sum())
+
+print(df.describe())
+
+print(df.shape)

@@ -3,5 +3,4 @@ scikit-learn
 wordcloud
 seaborn
 matplotlib
-wordcloud
 networkx
