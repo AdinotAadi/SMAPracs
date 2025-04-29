@@ -4,7 +4,6 @@ import networkx as nx
 from networkx.algorithms.community import girvan_newman
 
 df = pd.read_csv("/content/twitter_dataset.csv").head(20)
-
 G = nx.Graph()
 
 for brand in df["Brand"].dropna().unique():
